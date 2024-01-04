@@ -1,0 +1,3 @@
+1. We needed total paths towards a cell to be exactly 10^9+7; in that way, the program will not output anything where it should have printed 0 as output.
+2. At first, I calculated highest n so that (2n)C(n) < 10^9+7 and made a n*n grid only with dots. In this way, the bottom right cell has (2n)C(n) ways, and other cells at the edge have a lower number of paths.
+3. I ran the program with this input and calculated which of the edge cells aggregated a total of 10^9+7 paths and channeled them to a single cell. This destination cell produced no output while running the program where it should have produced output ‘0’.
